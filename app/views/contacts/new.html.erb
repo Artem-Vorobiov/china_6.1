@@ -112,11 +112,12 @@
 	</form>
 </div>
 -->
+<div class="hidden">
 
-<div id="communication">
+<div id="test-form" class="white-popup-block mfp-hide">
 	
 	<h3 style="margin: 0 auto;">Form</h3>
-	<%= form_for @contact do |f| %>
+	<%= form_for @contact do |f|  %>
 
 		<%= f.label :name %> <br>
 		<%= f.text_field :name, required: true %>
@@ -137,4 +138,5 @@
 
 	<% end %>
 
+</div>
 </div>
