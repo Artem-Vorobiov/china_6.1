@@ -386,7 +386,26 @@ footer {
 }
 
 
+//-------Create Page--------//
 
+
+.rotate {
+	background-color: $light;
+	color: $dark;
+	letter-spacing: 1em;
+	text-align: center;
+	margin: 30px auto 5px auto;
+	width: 85%;
+	
+}
+
+.fa-check-circle {
+	padding: 10px;
+	text-align: center;
+	margin: 0px auto;
+	font-size: 10em;
+	display: block;
+}
 
 
 
