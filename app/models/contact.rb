@@ -7,6 +7,8 @@ class Contact < MailForm::Base
   attribute :nickname,  :captcha  => true
   attribute :phone,     :validate => true
 
+  attribute :vk,     :validate => true
+
   def headers
     {
       :subject => "ChinaDanceTeam",
