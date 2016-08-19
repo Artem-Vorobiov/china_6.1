@@ -307,30 +307,50 @@ footer {
 
 //-------Forms--------//
 
-#test-form {
-	padding:0px;
-	background: $white;
-	max-width: 320px;
-	margin: 40px auto;
-	border-radius: 8px;
-	border: 3px solid brown;
-	position: relative;
-	color:$dark_grey;
-	input, textarea {
-		width:100%;
-		margin-bottom: 13px;
-	}
-	h1 {
-		color: $dark;
-		margin: 2px;
-	}
-	.wrAdm {
-		padding: 2px;
-		margin: 0px auto;
-		font-family: "brandon-grotesque", Helvetica, sans-serif;
+
+	#test-form {
+		padding:8px;
+		background: $white;
+		max-width: 320px;
+		margin: 40px auto;
+		border-radius: 8px;
+		border: 3px solid brown;
+		position: relative;
+		color:$dark_grey;
+			input, textarea {
+				width:100%;
+				margin: 1px 0px 12px 0px;
+		}
+			h1 {
+				color: $dark;
+				margin: 2px 2px 12px 8px;
+		}
+			.wrAdm {
+				padding: 8px;
+				margin: 0px auto;
+				font-family: "brandon-grotesque", Helvetica, sans-serif;
+		}
+			.f_label_all {
+				padding: 0px 0px 0px 10px;
+			}
+
+			#content_name, #content_email, #content_phone, #content_message {
+				padding-top: 10px;
+			}
+			.fa {
+				margin: 10px auto;
+				font-size: 1.05em;
+			}
+
 	}
 
-}
+
+
+
+
+//-------Hidden--------//
+
+
 
 .hidden {
 	display: none;	

@@ -5,6 +5,7 @@ class Contact < MailForm::Base
 
   attribute :message
   attribute :nickname,  :captcha  => true
+  attribute :phone
 
   def headers
     {

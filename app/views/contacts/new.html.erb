@@ -114,27 +114,43 @@
 -->
 <div class="hidden">
 
-<div id="test-form" class="white-popup-block mfp-hide">
+<div id="i_secondary_form" class="c_secondary_form">
 	
-	<h3 style="margin: 0 auto;">Form</h3>
-	<%= form_for @contact do |f|  %>
+</div>
 
-		<%= f.label :name %> <br>
-		<%= f.text_field :name, required: true %>
+<div id="i_main_form" class="c_main_form">	
 
-		<br>
+	<%= form_for @contact, html: {id: "test-form", class: "white-popup-block mfp-hide"} do |f|  %>
+		
+		<h1>Form</h1>
 
-		<%= f.label :email %> <br>
-		<%= f.email_field :email, required: true %>
-
-		<br>
-
-		<%= f.label :message %> <br>
-		<%= f.text_area :message, as: :text %>
+		<%= f.label :name, "Ф.И.О", class: "f_label_all" %>
+		<%= f.text_field :name, placeholder: "Лучший Артем Леонидович", required: "true" %>
 
 		<br>
 
-		<%= f.submit "Send Message",  class: "button_small" %>
+		<%= f.label :email, "Почта", class: "f_label_all" %>
+		<%= f.text_field :email, placeholder: "example@domain.com", required: "true" %>
+
+		<br>
+
+		<%= f.label :phone,  "Телефон", class: "f_label_all" %>
+		<%= f.telephone_field :phone, placeholder: "+380 95 568 88 99", required: "true" %>
+		
+
+		<br>
+
+		<%= f.label :message, "Информация", class: "f_label_all" %>
+		<%= f.text_area :message, size: "5x3", placeholder: "Возраст. Рост. Вес. Танцевальная подготовка, опыт. Почему к нам?" %>
+
+		<br>
+
+		<%= f.submit "Отправить Сообщение" %>
+
+		<br>
+
+		<a href="https://vk.com/vorobiov_a_p" class="wrAdm" target="_blank"><i class="fa fa-vk" aria-hidden="true">  Напиши в вк администратору</i></a>
+
 
 	<% end %>
 
