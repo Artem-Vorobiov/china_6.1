@@ -5,7 +5,7 @@ class Contact < MailForm::Base
 
   attribute :message
   attribute :nickname,  :captcha  => true
-  attribute :phone
+  attribute :phone,     :validate => /(?<!\w)(?:(?:(?:(?:\+?3)?8\W{0,5})?0\W{0,5})?[34569]\s?\d[^\w,;(\+]{0,5})?\d\W{0,5}\d\W{0,5}\d\W{0,5}\d\W{0,5}\d\W{0,5}\d\W{0,5}\d(?!(\W?\d))/x
 
   def headers
     {

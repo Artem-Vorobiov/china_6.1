@@ -161,6 +161,9 @@ body {
 	  }
 	  .button {
 	  	padding: .5rem 2rem;
+	  #inv_btn {
+	  	width: 80%;
+	  }
 	  }
 	  &:after {
 	  	content: " ";
@@ -360,15 +363,25 @@ footer {
 	border-radius: 8px;
 	border: 3px solid $highlight_2;
 	width: 300px;
-	height:300px;
+	height:350px;
 	background: $white;
 	h3 {
 		color: $dark;
-		padding: 5px;
+		padding: 6px;
 		text-align: center;
+		margin: 0px;
 	}
 	p{
-		padding: 7px;
+		padding: 3px 13px;
+		margin: 5px;
+	}
+	a {
+		text-decoration: none;
+		cursor: pointer;
+	}
+	hr {
+		padding: 0px;
+		margin: 5px;
 	}
 }
 
